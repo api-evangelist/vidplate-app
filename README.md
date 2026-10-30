@@ -64,5 +64,139 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-VidPlate is a company surfaced via the API Evangelist harvest backlog (source: new-submission) and added to the network as a stub for full-pipeline profiling.
-- https://vidplate.app
+VidPlate provides an API for rendering video and static images from templates. The platform offers 4K video rendering, multiple codecs, and real‑time 3D rendering via VidPlate Volt and high‑quality film‑style rendering via VidPlate Prism. Users submit JSON data to templates, receive rendered assets, and get webhook notifications when renders complete. A sandbox environment is available for testing.
+
+**Areas:** Company · Video · Rendering · API · 3D · Templates
+
+## VidPlate on APIs.io
+
+Everything profiled for VidPlate is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/vidplate-app/](https://apis.io/providers/vidplate-app/)** — or go straight to one of the APIs or properties below.
+
+### APIs (8)
+
+- [VidPlate Account API](https://apis.io/apis/vidplate-app/vidplate-app-account-api/) — Health and the key in use.
+- [VidPlate Render nodes API](https://apis.io/apis/vidplate-app/vidplate-app-render-nodes-api/) — Your workspace's Browser Nodes: online, processing or offline, and what they can render.
+- [VidPlate Render presets API](https://apis.io/apis/vidplate-app/vidplate-app-render-presets-api/) — 3D render presets: named Volt or Prism settings, made in the developer console, that a render names by code.
+- [VidPlate Renders API](https://apis.io/apis/vidplate-app/vidplate-app-renders-api/) — Create renders, follow their status and download the outputs.
+- [VidPlate Storage destinations API](https://apis.io/apis/vidplate-app/vidplate-app-storage-destinations-api/) — Bring your own storage (Growth and above): your own S3-compatible buckets that outputs are delivered to.
+- [VidPlate Templates API](https://apis.io/apis/vidplate-app/vidplate-app-templates-api/) — Your templates, their versions and each version's input schema.
+- [VidPlate Uploads API](https://apis.io/apis/vidplate-app/vidplate-app-uploads-api/) — Images and 3D models to use as field values.
+- [VidPlate Webhook endpoints API](https://apis.io/apis/vidplate-app/vidplate-app-webhook-endpoints-api/) — Where VidPlate sends render and template events.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Vidplate App Webhooks](https://apis.io/asyncapis/vidplate-app/vidplate-app-webhooks/)
+
+#### Agentic access (1)
+
+Which operations an agent can call, which act, and which need a human in the loop.
+
+- [Vidplate App Agentic Access](https://apis.io/agentic-access/vidplate-app/vidplate-app-agentic-access/)
+
+#### JSON Schema (6)
+
+The data models the API reads and writes.
+
+- [Render](https://apis.io/schemas/vidplate-app/vidplate-app-render/)
+- [RenderEstimate](https://apis.io/schemas/vidplate-app/vidplate-app-render-estimate/)
+- [RenderNode](https://apis.io/schemas/vidplate-app/vidplate-app-render-node/)
+- [StorageDestination](https://apis.io/schemas/vidplate-app/vidplate-app-storage-destination/)
+- [TemplateFields](https://apis.io/schemas/vidplate-app/vidplate-app-template-fields/)
+- [TemplateVersion](https://apis.io/schemas/vidplate-app/vidplate-app-template-version/)
+
+#### JSON-LD (1)
+
+Linked-data contexts for the provider's vocabulary.
+
+- [Vidplate App Context](https://apis.io/jsonld/vidplate-app/vidplate-app-context/)
+
+#### Governance rules (1)
+
+Spectral rulesets for the provider's contracts.
+
+- [VidPlate API Rules](https://apis.io/rules/vidplate-app/vidplate-app-rules/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Vidplate App Authentication](https://apis.io/security/vidplate-app/vidplate-app-authentication/)
+- [Vidplate App Domain Security](https://apis.io/security/vidplate-app/vidplate-app-domain-security/)
+- [Vidplate App Vulnerability Disclosure](https://apis.io/security/vidplate-app/vidplate-app-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://vidplate.app)
+- [Documentation](https://vidplate.app/developers/docs)
+- [Getting started](https://vidplate.app/developers/docs/quick-start)
+- [API reference](https://vidplate.app/developers/docs/reference)
+- [Pricing](https://vidplate.app/developers/pricing)
+- [Sign up](https://vidplate.app/login)
+- [Changelog](https://vidplate.app/developers/docs/changelog)
+- [Blog](https://vidplate.app/blog)
+- [Security](https://vidplate.app/security)
+- [Terms of service](https://vidplate.app/terms-of-use)
+- [Privacy policy](https://vidplate.app/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 60.3** — strong · rubric 0.25.0 · scored 2026-10-30
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 67.1 |
+| Contract governance | 79.1 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 58.8 |
+| Access clarity | 44.7 |
+
+**Agent readiness 52.2** — agent-native
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | unknown |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | verified |
+| Error Semantics | verified |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | unknown |
+| Agent Skills | unknown |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | paginated |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/vidplate-app/](https://apis.io/providers/vidplate-app/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for VidPlate: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/vidplate-app/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
