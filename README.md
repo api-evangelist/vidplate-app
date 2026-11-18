@@ -64,7 +64,7 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-VidPlate provides an API for rendering video and static images from templates. The platform offers 4K video rendering, multiple codecs, and real‑time 3D rendering via VidPlate Volt and high‑quality film‑style rendering via VidPlate Prism. Users submit JSON data to templates, receive rendered assets, and get webhook notifications when renders complete. A sandbox environment is available for testing.
+VidPlate is a cloud‑based video rendering platform that lets agencies, studios, and in‑house teams automate the creation of video, social, digital, and print media. Through a set of RESTful APIs, developers can define templates, supply JSON data, and trigger high‑quality 4K video renders using either real‑time 3D engines (VidPlate Volt) or film‑style rendering (VidPlate Prism). The service supports multiple codecs, custom storage destinations, and webhook callbacks for render completion, while offering a sandbox environment for testing and iteration.
 
 **Areas:** Company · Video · Rendering · API · 3D · Templates
 
@@ -97,18 +97,22 @@ Event-driven and webhook contracts.
 
 Which operations an agent can call, which act, and which need a human in the loop.
 
-- [Vidplate App Agentic Access](https://apis.io/agentic-access/vidplate-app/vidplate-app-agentic-access/)
+- [VidPlate Agentic Access](https://apis.io/agentic-access/vidplate-app/vidplate-app-agentic-access/)
 
-#### JSON Schema (6)
+#### JSON Schema (10)
 
 The data models the API reads and writes.
 
 - [Render](https://apis.io/schemas/vidplate-app/vidplate-app-render/)
 - [RenderEstimate](https://apis.io/schemas/vidplate-app/vidplate-app-render-estimate/)
 - [RenderNode](https://apis.io/schemas/vidplate-app/vidplate-app-render-node/)
+- [RenderPresetList](https://apis.io/schemas/vidplate-app/vidplate-app-render-preset-list/)
 - [StorageDestination](https://apis.io/schemas/vidplate-app/vidplate-app-storage-destination/)
 - [TemplateFields](https://apis.io/schemas/vidplate-app/vidplate-app-template-fields/)
 - [TemplateVersion](https://apis.io/schemas/vidplate-app/vidplate-app-template-version/)
+- [Upload](https://apis.io/schemas/vidplate-app/vidplate-app-upload/)
+- [WebhookEndpoint](https://apis.io/schemas/vidplate-app/vidplate-app-webhook-endpoint/)
+- [WebhookEndpointList](https://apis.io/schemas/vidplate-app/vidplate-app-webhook-endpoint-list/)
 
 #### JSON-LD (1)
 
@@ -126,9 +130,21 @@ Spectral rulesets for the provider's contracts.
 
 Authentication, trust centre, and vulnerability disclosure.
 
-- [Vidplate App Authentication](https://apis.io/security/vidplate-app/vidplate-app-authentication/)
-- [Vidplate App Domain Security](https://apis.io/security/vidplate-app/vidplate-app-domain-security/)
-- [Vidplate App Vulnerability Disclosure](https://apis.io/security/vidplate-app/vidplate-app-vulnerability-disclosure/)
+- [VidPlate Authentication](https://apis.io/security/vidplate-app/vidplate-app-authentication/)
+- [VidPlate Domain Security](https://apis.io/security/vidplate-app/vidplate-app-domain-security/)
+- [VidPlate Vulnerability Disclosure](https://apis.io/security/vidplate-app/vidplate-app-vulnerability-disclosure/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [VidPlate Plans Pricing](https://apis.io/plans/vidplate-app/vidplate-app-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [VidPlate Rate Limits](https://apis.io/rate-limits/vidplate-app/vidplate-app-rate-limits/)
 
 ## Where to find this API
 
@@ -141,40 +157,39 @@ Links to the company's own pages. This repository publishes no copy of their spe
 - [Pricing](https://vidplate.app/developers/pricing)
 - [Sign up](https://vidplate.app/login)
 - [Changelog](https://vidplate.app/developers/docs/changelog)
-- [Blog](https://vidplate.app/blog)
 - [Security](https://vidplate.app/security)
 - [Terms of service](https://vidplate.app/terms-of-use)
 - [Privacy policy](https://vidplate.app/privacy-policy)
 
 ## API Evangelist rating
 
-**Kin Score 60.3** — strong · rubric 0.25.0 · scored 2026-10-30
+**Kin Score 73.9** — exemplar · rubric 0.27.0 · scored 2026-11-18
 
 | Facet | Score |
 |---|---|
-| Discoverability | 66.1 |
-| Contract quality | 67.1 |
+| Discoverability | 73.2 |
+| Contract quality | 70.5 |
 | Contract governance | 79.1 |
-| Operational transparency | 34.2 |
-| Developer ergonomics | 58.8 |
-| Access clarity | 44.7 |
+| Operational transparency | 70.5 |
+| Developer ergonomics | 56.4 |
+| Access clarity | 73.2 |
 
-**Agent readiness 52.2** — agent-native
+**Agent readiness 56.0** — agent-native
 
 | Agent-readiness dimension | Result |
 |---|---|
 | Spec Presence | yes |
 | Agentic Access | unknown |
-| Reversibility Documented | — |
-| MCP Server | documented (partial credit) |
+| Reversibility Documented | documented (partial credit) |
+| MCP Server | — |
 | Auth Clarity | bearer (partial credit) |
 | Idempotency | verified |
 | Error Semantics | verified |
 | OpenAPI Examples | verified |
-| Rate Limit Signal | — |
+| Rate Limit Signal | documented (partial credit) |
 | Event Surface Described | unknown |
 | Agent Skills | unknown |
-| Well Known Catalog | — |
+| Well Known Catalog | yes |
 | Consent Identity | — |
 | Agent Card | — |
 | Dry Run Mode | — |
@@ -184,6 +199,7 @@ Links to the company's own pages. This repository publishes no copy of their spe
 | Agentic Commerce | — |
 | Pagination Ratio | paginated |
 | Operation Distinctiveness | distinct |
+| MCP Tool Quality | na |
 
 **Regulatory alignment 30.4** — Horizontal (data, software, accessibility, platform)
 
